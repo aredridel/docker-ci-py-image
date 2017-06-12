@@ -5,3 +5,4 @@ RUN sudo apt-get -y install python-pip
 RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 RUN sudo python get-pip.py
 RUN sudo pip install awscli
+RUN mkdir -p /opt/orion && chown circleci /opt/orion
